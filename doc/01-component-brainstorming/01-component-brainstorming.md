@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**:Saanvi Mishra
+- **Dot Number**: mishra.342
+- **Due Date**: 02/06/2026
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -67,12 +61,10 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
-
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
 are meant to provide ongoing feedback in the learning process. Therefore,
-the rubric is designed to assess the learning objectives *directly* in a way
+the rubric is designed to assess the learning objectives _directly_ in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
@@ -106,23 +98,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+I am honestly unsure about my career goals, but I am planning on going something into software engineering or the CSE field because there are so many different jobs I could try out from that field. However, as for my personal hobbies,I danced for 11 years and I love music and singing. I also love hanging out with my friends and watching shows, but I struggle when it comes to tracking and scheduling my day.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -142,8 +126,6 @@ list-like components that have different ways of manipulating the data. Think
 about different ways you might allow a client to manipulate your component.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -168,7 +150,7 @@ format, we can be more confident that your designs will be possible.
     - `NaturalNumber divide(NaturalNumber n)`: divides `this` by `n`, returning
       the remainder
     - ...
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - Yes, basically all OSU components have to be mutable as long as they
@@ -180,7 +162,7 @@ format, we can be more confident that your designs will be possible.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
       - Yes. NaturalNumber is base 10, and we track that in a constant called
-          `RADIX`.
+        `RADIX`.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
       - Yes. The kernel methods `multiplyBy10` and `divideBy10` can be used to
@@ -211,68 +193,90 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Time Management
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is that it models your daily schedule with time blocks for classes, hanging out, eating, working out, etc. Some people struggle with managing their time and want a good way to organize it.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - 'void addBlock(String activity, int startHour, int duration)': adds time block to 'this'
+    - 'String removeBlock(int hour): removes and returns the activity occuring at 'hour'
+    - 'String seeBlock(int hour): instead of removing the activity, it lets user view activity at 'hour'
+    - boolean isFree(int hour): checks if 'hour' is available (true if yes, false if not)
+    - void clear(): clears all of schedule (clears 'this')
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    - int findFreeSlot(int duration): finds the first available time slot for the given amount of 'duration'
+    - int countStudyHours(): counts all the study blocks or how much time you are working on academics
+    - boolean hasConflict(int hour, int duration): checks to see if there are any scheduling conflicts with 'hour' and that 'duration'
+    - int freeTime(): calculates the amount of time that is unscheduled
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it would because both addBlock() and removeBlock() directly change the schedule by adding or removing the time blocks which changes what 'this' is. It is also mutable because it would extend Standard.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Maybe, there could maybe be an internal class called TimeBlock that would pair an activity, start hour, and duration together (kind of how like Map uses Pair).
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, there would be constants for like how many hours are in the day (24), or the minimum duration for a time block (maybe 1). There could also be enums for common activities that would probably be in someones schedule like sleep, meals, studying, or excercising.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, for example, findFreeSlot() could go through all 24 hours by using isFree() to check each hour and when it finds enough consecutve free hours, it would return that start time. Another one would be using seeBlock() to help check each activity for countStudyHours() and sum up the durations where the activity is studying. All of these kernel methods are base methods that help make more complex ones in the secondary methods.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Music Playlist
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is that it models a playlist like a sequence of songs. It would allow the user to put all their favorite songs into a playlist or organize it any other way. The user would have an accessible way to listen to the songs they want to currently.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - 'void addSong(String title, String artist)': adds song to the end of the playlist ('this')
+    - 'String removeSong(String title, String artist)': removes a song in the playlist (returns empty string if not in the playlist)
+    - 'String removeFirstSong()': removes the first song from the playlist
+    - 'boolean isEmpty()': checks to see if the playlist is empty and returns true if it is
+    - 'int size()': returns the number of songs in the playlist
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    - 'void shuffle()': shuffles the orders of the songs in 'this'
+    - 'void removeDuplicates()': removes any repeated songs
+    - 'boolean contains(String title)': searches for a song and returns true if playlist has the song
+    - 'void append(Playlist other)': combines two playlists
+    - 'Playlist filterArtist(String artist)': creates another playlist with only the 'artist' songs
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yeah because the methods like addSong() or removeSong() all change the playlist by adding or removing songs from 'this'.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I'm not sure.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      -Maybe we could have enums for genre (like pop, rap, country, classical, etc.) or moods (happy, sad, focus, etc.).
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yeah, for example, addSong() could help with append because you could add all the songs from one playlist into the other and then you could use removeDuplicates() to remove any duplicates in this combined playlist.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Workout Tracker
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is to model a workout as a queue of excercises that you would do in an order. Lets the user keep track of what excercises they would do and how many of each one they would do.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - 'void addExcercise(String name, int sets, int reps)': adds excercise to end of the workout ('this)
+    - 'String removeFirstExcercise()': removes and returns the first excercise of the workout
+    - 'int sets(String name)': returns the amount of sets in the given workout
+    - 'int reps(String name)': returns the amount of reps in the given workout
+    - 'boolean workoutDone()': returns true if the whole workout is complete
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    - 'int totalTime()': estimates the total time of the whole workout (maybe 2 min per set)
+    - 'void increaseDifficulty(int percentInc)': increases all the reps by 'percentInc' to make workout more intense
+    - 'int totalSets()':sums up all the sets across the excercises
+    - 'void addSuperset(String excercise1, String excercise2,, int sets, int reps)': adds paired excercises to 'this'
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, because addExcercise() and removeFirstExcercise() both change 'this' directly and extends from Standard.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Maybe an internal Excercise class to put together the excercise name, set and reps.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Maybe there could be constants like seconds between excercises or per set rest. There could also be enums for the muscle groups like legs, back, arms, core, etc.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yeah, for example, you could use removeFirstExcercise() until there are no excercises left to see the totalTime of the whole workout.
 
 ## Post-Assignment
 
@@ -280,8 +284,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -320,8 +322,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -330,11 +330,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -360,8 +356,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
