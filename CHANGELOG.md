@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## [2026.02.25]
+
+### Added
+
+- Designed a proof of concept for time management component
+
+### Updated
+
+- Changed design to include all kernel and secondary methods
+- Added constructor along with private variables
+
+## [2026.02.05]
+
+### Added
+
+- Designed a Time Management component
+- Designed a Music Playlist component
+- Designed a Workout Tracker component
+
 ## [Unreleased]
 
 - Disabled an aspect of the coderunner extension
