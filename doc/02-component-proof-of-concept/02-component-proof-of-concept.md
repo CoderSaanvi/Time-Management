@@ -3,11 +3,18 @@
 - **Name**: Saanvi Mishra
 - **Dot Number**: mishra.342
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - **Due Date**: 2/26 at 1:50
 
 ## Assignment Overview
 
 
+=======
+- **Due Date**: 02/26
+
+## Assignment Overview
+
+>>>>>>> Stashed changes
 =======
 - **Due Date**: 02/26
 
@@ -37,7 +44,10 @@ the more work you can put in now, the better.
 ## Assignment Checklist
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 To be sure you have completed everything on this assignment, we have littered
@@ -62,7 +72,10 @@ to the tree diagram (you may remove this one as well):
 ## Assignment Learning Objectives
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 Without learning objectives, there really is no clear reason why a particular
@@ -79,7 +92,10 @@ project. Specifically, students should be able to:
 ## Assignment Rubric: 10 Points
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 Again, to be completely transparent, most of the portfolio project, except the
@@ -127,9 +143,12 @@ Below is further rationale/explanation for the rubric items above:
 > disclose that here as well.
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 I chose the Study/Time Block Scheduler component because honestly, I really suck at managing my time and I know I'm not the only one. As a freshman trying to balance CSE classes, a business minor, dance practice, working out, and having a social life, I'm constantly either double-booking myself or forgetting to leave time to just breathe. This component would solve a real problem I deal with every single day, which is going to keep me way more motivated to work on it all semester instead of forcing myself through something I don't care about. Plus, pretty much every college student struggles with this, so it's a super relatable project that would look good in a portfolio when I'm trying to get internships. The technical side seems totally doable too—the kernel methods are pretty straightforward (just adding blocks, removing them, checking if a time is free), and I can build it using Java we already know like Maps or Lists.. What I think is really cool about this design is that I can add secondary methods that most time management apps don't have, like a `balanceCheck()` that actually tells you when you're being insane and scheduling too much without any breaks, or `getSuggestedBreak()` that figures out when you should chill for a bit based on how many hours you've been studying. Most apps just let you put things on a calendar, but they don't really help you figure out if you're scheduling your time in a healthy way, which is honestly the harder part. I can demo this with super realistic scenarios too—like showing a typical day where I'm trying to fit in class, studying, the gym, and hanging out with friends, or showing how it catches conflicts when I accidentally try to schedule two things at once. I did think about doing the Music Playlist and the Workout Tracker because those would be beneficial, but at the end of the day, I'm going to actually use a scheduler in my real life, and that's going to make this project way more worth it.
 =======
+=======
+>>>>>>> Stashed changes
 I chose the Study/Time Block Scheduler component because honestly, I really suck at managing my time and I
 know I'm not the only one. As a freshman trying to balance CSE classes, a business minor, dance practice, working
 out, and having a social life, I'm constantly either double-booking myself or forgetting to leave time to just
@@ -148,6 +167,9 @@ trying to fit in class, studying, the gym, and hanging out with friends, or show
 accidentally try to schedule two things at once. I did think about doing the Music Playlist and the Workout Tracker
 because those would be beneficial, but at the end of the day, I'm going to actually use a scheduler in my real life,
 and that's going to make this project way more worth it
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 > Once you've argued your choice of design, make a branch in your new repo called
